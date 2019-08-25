@@ -15,4 +15,11 @@ exports.onCreatePage = async ({ page, actions }) => {
     // Update the page.
     createPage(page)
   }
+
+  if (page.path.match(/^\/lists/)) {
+    page.matchPath = `/lists/*`
+
+    // Update the page.
+    createPage(page)
+  }
 }
