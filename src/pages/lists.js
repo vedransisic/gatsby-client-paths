@@ -6,7 +6,6 @@ import List from "../components/List"
 
 const App = () => (
   <Layout>
-    <Status />
     <Router>
       <List path="/lists/:id" />
     </Router>
